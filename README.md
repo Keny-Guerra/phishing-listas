@@ -1,8 +1,7 @@
 # Sistema Predictivo de Detección de Phishing — Implementación (Modelo CNN + ONNX)
 
 Proyecto: *Sistema Predictivo Basado en Deep Learning para la Detección de Phishing en Usuarios Digitales de Arequipa*
-Autor: Keny Russell Guerra Huanaco (código/DNI 2022701591) — UCSM, Ingeniería de Sistemas, 9no semestre
-Docente asesor: Nestor Torres
+Autor: Keny Russell Guerra Huanaco, Ingeniería de Sistemas
 
 Este directorio contiene el código de implementación (RF5-RF8, CU-01 a CU-08) que entrena y exporta el
 modelo de clasificación de URLs, siguiendo las decisiones documentadas en el Capítulo 1 y la Práctica 5:
