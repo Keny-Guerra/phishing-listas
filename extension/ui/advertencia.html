@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Advertencia</title><link rel="stylesheet" href="estilos.css"></head>
+<body class="peligro-pagina"><main class="pagina">
+<div class="cab-peligro" role="alert"><span class="simbolo" aria-hidden="true">✕</span><h1>Bloqueamos este sitio: posible phishing</h1></div>
+<span class="etq">Dirección bloqueada</span><strong class="dominio-grande" id="host">…</strong>
+<section class="tarjeta-seccion"><h2>Por qué</h2><p id="porque">…</p><p id="marca" hidden></p>
+<details><summary>Ver detalles</summary><p class="nota" id="detalle"></p><p class="nota">El análisis es una estimación y puede equivocarse. Si estás seguro de que el sitio es legítimo, puedes reportarlo.</p></details></section>
+<div class="acciones"><button class="principal" id="volver">Volver a un sitio seguro</button></div>
+<section class="tarjeta-seccion"><h2>¿Quieres entrar de todos modos?</h2>
+<label class="fila"><input type="checkbox" id="entiendo"><span>&nbsp;Entiendo el riesgo</span></label>
+<div class="acciones"><button id="seguir" disabled>Continuar</button><button id="falso">Este sitio es seguro (reportar)</button></div>
+<p class="nota">Continuar permite esta visita (por un rato) y no agrega el sitio a tu lista de permitidos.</p></section>
+</main><script type="module" src="advertencia.js"></script></body></html>

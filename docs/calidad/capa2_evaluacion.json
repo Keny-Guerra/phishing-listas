@@ -1,0 +1,161 @@
+{
+  "marcas": 37,
+  "estados": {
+    "confirmado": 18,
+    "por_confirmar": 12,
+    "global": 7
+  },
+  "legitimas": {
+    "n": 39671,
+    "marcadas": 20,
+    "fpr_%": 0.05,
+    "ejemplos": [
+      "mercadolibre.com.mx",
+      "bbva.com.ar",
+      "whats-on-netflix.com",
+      "instagrammernews.com",
+      "jne.co.id",
+      "roblox.net",
+      "microsoftcrmportals.com",
+      "facebook.de",
+      "bbva.es",
+      "instragram.com",
+      "jne-asso.org",
+      "microsoftusercontent.com",
+      "microsoftonline.us",
+      "microsoftonline.cn",
+      "mercadolibre.com.ec"
+    ],
+    "por_regla": {
+      "termino": 19,
+      "tipeo": 1
+    }
+  },
+  "phishing_v7": {
+    "n": 35192,
+    "marcadas": 260,
+    "%": 0.74,
+    "por_marca": {
+      "facebook": 109,
+      "microsoft": 65,
+      "netflix": 25,
+      "instagram": 13,
+      "whatsapp": 12,
+      "interbank": 11,
+      "paypal": 10,
+      "bcp": 5,
+      "banconacion": 3,
+      "bbva": 2
+    }
+  },
+  "feed": {
+    "n": 224,
+    "marcadas": 12,
+    "marcadas_sin_roblox": 5,
+    "ejemplos": [
+      [
+        "facebook-facebook1.blogspot.com",
+        "facebook",
+        "termino"
+      ],
+      [
+        "instagramlogin74.blogspot.com",
+        "instagram",
+        "termino"
+      ],
+      [
+        "microsoftt7.vercel.app",
+        "microsoft",
+        "termino"
+      ],
+      [
+        "robiox.com.gr",
+        "roblox",
+        "tipeo"
+      ],
+      [
+        "roblox.com.et",
+        "roblox",
+        "termino"
+      ],
+      [
+        "roblox.com.gr",
+        "roblox",
+        "termino"
+      ],
+      [
+        "roblox.com.kz",
+        "roblox",
+        "termino"
+      ],
+      [
+        "roblox.com.ss",
+        "roblox",
+        "termino"
+      ],
+      [
+        "roblox.et",
+        "roblox",
+        "termino"
+      ],
+      [
+        "robloxr.com.es",
+        "roblox",
+        "termino"
+      ],
+      [
+        "scotiabnk.netlify.app",
+        "scotiabank",
+        "tipeo"
+      ],
+      [
+        "whatsapp.onguard.co.za",
+        "whatsapp",
+        "termino"
+      ]
+    ],
+    "perdidos_por_modelo": 28,
+    "rescatados_por_capa2": 5,
+    "rescatados_sin_roblox": 0,
+    "ejemplos_rescatados": [
+      "robiox.com.gr",
+      "roblox.com.et",
+      "roblox.com.gr",
+      "roblox.et",
+      "robloxr.com.es"
+    ]
+  },
+  "sinteticas_cobertura_de_reglas": {
+    "marca_mas_palabra": {
+      "detectadas": 66,
+      "n": 66,
+      "%": 100.0
+    },
+    "marca_en_subdominio": {
+      "detectadas": 66,
+      "n": 66,
+      "%": 100.0
+    },
+    "omision": {
+      "detectadas": 50,
+      "n": 60,
+      "%": 83.3
+    },
+    "duplicada": {
+      "detectadas": 60,
+      "n": 60,
+      "%": 100.0
+    },
+    "intercambio": {
+      "detectadas": 48,
+      "n": 60,
+      "%": 80.0
+    },
+    "caracter_parecido": {
+      "detectadas": 60,
+      "n": 60,
+      "%": 100.0
+    }
+  },
+  "oficiales_marcados_por_error": []
+}

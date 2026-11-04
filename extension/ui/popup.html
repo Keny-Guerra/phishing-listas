@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Estado del sitio</title><link rel="stylesheet" href="estilos.css"></head>
+<body class="popup"><div class="contenido">
+  <div class="cab">
+    <h1 id="nombre">…</h1>
+    <label class="fila" style="margin:0"><input type="checkbox" role="switch" id="activa" aria-describedby="ayuda-activa"><span>Protección activa</span></label>
+  </div>
+  <p class="sr" id="ayuda-activa">Interruptor: activa o desactiva el análisis de los sitios que visitas.</p>
+
+  <span class="etq">Sitio actual</span>
+  <strong class="dominio-actual" id="dominio">…</strong>
+
+  <div class="tarjeta" id="tarjeta" role="status" aria-live="polite">
+    <span class="simbolo" id="simbolo" aria-hidden="true">…</span>
+    <span class="texto" id="texto">Comprobando…</span>
+  </div>
+
+  <div class="puntaje" id="bloque-puntaje" hidden>
+    <span class="etq">Puntaje de riesgo del modelo (0 a 100)</span>
+    <span><span class="num" id="num">–</span> <span class="nota">de 100</span></span>
+    <div class="barra" id="barra" role="meter" aria-label="Puntaje de riesgo" aria-valuemin="0" aria-valuemax="100">
+      <div class="relleno" id="relleno"></div><div class="marca" id="marca-a"></div><div class="marca" id="marca-b"></div>
+    </div>
+    <div class="escala" aria-hidden="true"><span id="esc-a"></span><span id="esc-b"></span></div>
+    <p class="nota" id="nota-puntaje"></p>
+  </div>
+
+  <div><span class="etq">Motivo de la decisión</span><span id="motivo">—</span></div>
+
+  <div class="acciones">
+    <button class="principal" id="volver" hidden>Volver a un sitio seguro</button>
+    <button id="reportar" disabled>Reportar un error</button>
+    <button id="ajustes">Opciones</button>
+  </div>
+  <div class="pie"><div id="pie-listas"></div><div id="pie">Tus direcciones no salen de este equipo.</div></div>
+</div>
+<script type="module" src="popup.js"></script>
+</body></html>

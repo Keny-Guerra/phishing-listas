@@ -1,0 +1,10 @@
+{
+  "fecha": "2026-11-03",
+  "modelo": "v8 (variante ancha)",
+  "navegador": "Chromium (Playwright, modo headless nuevo) con la extensión cargada",
+  "casos": [
+    {"url": "https://www.google.com/", "obtenido": {"accion": "permitir", "motivo": "modelo_bajo_umbral"}},
+    {"url": "https://secure-bcp-verificacion-cuenta.xyz/login", "obtenido": {"accion": "bloquear", "motivo": "modelo_sobre_umbral_bloqueo"}}
+  ],
+  "latencia_ida_y_vuelta_ms": {"p50": 8.35, "p95": 14.29, "muestras": 300, "nota": "incluye mensajería service worker → offscreen → ONNX Runtime Web; no es solo inferencia"}
+}

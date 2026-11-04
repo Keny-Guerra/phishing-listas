@@ -1,0 +1,23 @@
+{
+  "name": "phishing-detector-extension-core",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint .",
+    "vendor": "node scripts_vendor.mjs",
+    "audit": "npm audit --audit-level=high"
+  },
+  "description": "Extensión MV3 de detección de phishing (inferencia local)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "onnxruntime-node": "^1.20.1",
+    "onnxruntime-web": "^1.20.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}

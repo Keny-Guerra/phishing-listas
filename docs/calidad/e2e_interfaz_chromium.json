@@ -1,0 +1,9 @@
+{
+ "popup_estado": "al día",
+ "popup_sitio": "No se puede leer el sitio actual.",
+ "goto_error": "Error",
+ "url_final": "chrome-extension://pnlemdijpeialdfjgichgnkhgaplgcmj/ui/advertencia.html?destino=http%3A%2F",
+ "bloqueada": true,
+ "host_mostrado": "secure-bcp-verificacion-cuenta.xyz",
+ "errores_js": []
+}

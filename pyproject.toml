@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["notebooks", "extension"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Guiones de prueba de extremo a extremo y de medición: legibilidad compacta, no son código de producción.
+"tests/e2e/*" = ["E401", "E501", "E701", "E702", "I001"]
+"src/evaluar_capa2.py" = ["E501", "E702"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "extension", "notebooks"]

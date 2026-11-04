@@ -1,0 +1,497 @@
+{
+ "version": "2026-11-03",
+ "nota": "Lista inicial de marcas. estado=confirmado: el dominio oficial se verificó el 03/11/2026 (respuesta del sitio o resultados de búsqueda); por_confirmar: dominio muy probable pero no verificado automáticamente (revisar a mano antes de publicar); global: marca internacional frecuente en suplantaciones, fuera del ámbito peruano. modo=amplio busca el término dentro de la etiqueta; modo=estricto solo término exacto (o con guiones) y errores de tipeo, para palabras cortas o comunes.",
+ "marcas": [
+  {
+   "id": "bcp",
+   "nombre": "BCP",
+   "tipo": "banco",
+   "dominios": [
+    "viabcp.com"
+   ],
+   "terminos": [
+    "bcp",
+    "viabcp"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "bcp_pe",
+   "nombre": "BCP (dominio alterno)",
+   "tipo": "banco",
+   "dominios": [
+    "bcp.com.pe"
+   ],
+   "terminos": [
+    "bcp"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "interbank",
+   "nombre": "Interbank",
+   "tipo": "banco",
+   "dominios": [
+    "interbank.pe"
+   ],
+   "terminos": [
+    "interbank"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "bbva",
+   "nombre": "BBVA Perú",
+   "tipo": "banco",
+   "dominios": [
+    "bbva.pe",
+    "bbva.com"
+   ],
+   "terminos": [
+    "bbva"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "scotiabank",
+   "nombre": "Scotiabank Perú",
+   "tipo": "banco",
+   "dominios": [
+    "scotiabank.com.pe"
+   ],
+   "terminos": [
+    "scotiabank"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "banconacion",
+   "nombre": "Banco de la Nación",
+   "tipo": "banco",
+   "dominios": [
+    "bn.com.pe"
+   ],
+   "terminos": [
+    "bancodelanacion",
+    "banconacion",
+    "bancodelanación"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "mibanco",
+   "nombre": "Mibanco",
+   "tipo": "banco",
+   "dominios": [
+    "mibanco.com.pe"
+   ],
+   "terminos": [
+    "mibanco"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "cajaarequipa",
+   "nombre": "Caja Arequipa",
+   "tipo": "caja",
+   "dominios": [
+    "cajaarequipa.pe"
+   ],
+   "terminos": [
+    "cajaarequipa"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "banbif",
+   "nombre": "BanBif",
+   "tipo": "banco",
+   "dominios": [
+    "banbif.com.pe"
+   ],
+   "terminos": [
+    "banbif"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "pichincha",
+   "nombre": "Banco Pichincha",
+   "tipo": "banco",
+   "dominios": [
+    "pichincha.pe"
+   ],
+   "terminos": [
+    "bancopichincha"
+   ],
+   "modo": "amplio",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "cajahuancayo",
+   "nombre": "Caja Huancayo",
+   "tipo": "caja",
+   "dominios": [
+    "cajahuancayo.com.pe"
+   ],
+   "terminos": [
+    "cajahuancayo"
+   ],
+   "modo": "amplio",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "yape",
+   "nombre": "Yape",
+   "tipo": "billetera",
+   "dominios": [
+    "yape.com.pe"
+   ],
+   "terminos": [
+    "yape"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "plin",
+   "nombre": "Plin",
+   "tipo": "billetera",
+   "dominios": [
+    "plin.pe"
+   ],
+   "terminos": [
+    "plin"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "pagoefectivo",
+   "nombre": "PagoEfectivo",
+   "tipo": "pagos",
+   "dominios": [
+    "pagoefectivo.pe"
+   ],
+   "terminos": [
+    "pagoefectivo"
+   ],
+   "modo": "amplio",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "niubiz",
+   "nombre": "Niubiz",
+   "tipo": "pagos",
+   "dominios": [
+    "niubiz.com.pe"
+   ],
+   "terminos": [
+    "niubiz"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "sunat",
+   "nombre": "SUNAT",
+   "tipo": "estado",
+   "dominios": [
+    "sunat.gob.pe"
+   ],
+   "terminos": [
+    "sunat"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "reniec",
+   "nombre": "RENIEC",
+   "tipo": "estado",
+   "dominios": [
+    "reniec.gob.pe"
+   ],
+   "terminos": [
+    "reniec"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "essalud",
+   "nombre": "EsSalud",
+   "tipo": "estado",
+   "dominios": [
+    "essalud.gob.pe"
+   ],
+   "terminos": [
+    "essalud"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "migraciones",
+   "nombre": "Migraciones",
+   "tipo": "estado",
+   "dominios": [
+    "migraciones.gob.pe"
+   ],
+   "terminos": [
+    "migraciones"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "indecopi",
+   "nombre": "Indecopi",
+   "tipo": "estado",
+   "dominios": [
+    "indecopi.gob.pe"
+   ],
+   "terminos": [
+    "indecopi"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "jne",
+   "nombre": "Jurado Nacional de Elecciones",
+   "tipo": "estado",
+   "dominios": [
+    "jne.gob.pe"
+   ],
+   "terminos": [
+    "jne"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "mercadolibre",
+   "nombre": "Mercado Libre",
+   "tipo": "retail",
+   "dominios": [
+    "mercadolibre.com.pe",
+    "mercadolibre.com"
+   ],
+   "terminos": [
+    "mercadolibre"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "falabella",
+   "nombre": "Falabella",
+   "tipo": "retail",
+   "dominios": [
+    "falabella.com.pe",
+    "falabella.com"
+   ],
+   "terminos": [
+    "falabella"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "ripley",
+   "nombre": "Ripley",
+   "tipo": "retail",
+   "dominios": [
+    "ripley.com.pe"
+   ],
+   "terminos": [
+    "ripley"
+   ],
+   "modo": "estricto",
+   "estado": "confirmado"
+  },
+  {
+   "id": "oechsle",
+   "nombre": "Oechsle",
+   "tipo": "retail",
+   "dominios": [
+    "oechsle.pe"
+   ],
+   "terminos": [
+    "oechsle"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "plazavea",
+   "nombre": "Plaza Vea",
+   "tipo": "retail",
+   "dominios": [
+    "plazavea.com.pe"
+   ],
+   "terminos": [
+    "plazavea"
+   ],
+   "modo": "amplio",
+   "estado": "confirmado"
+  },
+  {
+   "id": "tottus",
+   "nombre": "Tottus",
+   "tipo": "retail",
+   "dominios": [
+    "tottus.com.pe"
+   ],
+   "terminos": [
+    "tottus"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "claro",
+   "nombre": "Claro Perú",
+   "tipo": "telecom",
+   "dominios": [
+    "claro.com.pe"
+   ],
+   "terminos": [
+    "claroperu"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "movistar",
+   "nombre": "Movistar Perú",
+   "tipo": "telecom",
+   "dominios": [
+    "movistar.com.pe"
+   ],
+   "terminos": [
+    "movistar"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "entel",
+   "nombre": "Entel Perú",
+   "tipo": "telecom",
+   "dominios": [
+    "entel.pe"
+   ],
+   "terminos": [
+    "entel"
+   ],
+   "modo": "estricto",
+   "estado": "por_confirmar"
+  },
+  {
+   "id": "paypal",
+   "nombre": "PayPal",
+   "tipo": "global",
+   "dominios": [
+    "paypal.com"
+   ],
+   "terminos": [
+    "paypal"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "netflix",
+   "nombre": "Netflix",
+   "tipo": "global",
+   "dominios": [
+    "netflix.com"
+   ],
+   "terminos": [
+    "netflix"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "whatsapp",
+   "nombre": "WhatsApp",
+   "tipo": "global",
+   "dominios": [
+    "whatsapp.com"
+   ],
+   "terminos": [
+    "whatsapp"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "facebook",
+   "nombre": "Facebook",
+   "tipo": "global",
+   "dominios": [
+    "facebook.com"
+   ],
+   "terminos": [
+    "facebook"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "instagram",
+   "nombre": "Instagram",
+   "tipo": "global",
+   "dominios": [
+    "instagram.com"
+   ],
+   "terminos": [
+    "instagram"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "microsoft",
+   "nombre": "Microsoft",
+   "tipo": "global",
+   "dominios": [
+    "microsoft.com",
+    "microsoftonline.com",
+    "office.com",
+    "live.com"
+   ],
+   "terminos": [
+    "microsoft"
+   ],
+   "modo": "amplio",
+   "estado": "global"
+  },
+  {
+   "id": "roblox",
+   "nombre": "Roblox",
+   "tipo": "global",
+   "dominios": [
+    "roblox.com"
+   ],
+   "terminos": [
+    "roblox"
+   ],
+   "modo": "amplio",
+   "estado": "global",
+   "nota": "agregada el 03/11/2026 DESPUÉS de ver el feed de ese día; sus aciertos en esa muestra no son evidencia independiente"
+  }
+ ]
+}

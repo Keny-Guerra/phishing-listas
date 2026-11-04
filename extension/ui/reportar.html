@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reportar un error</title><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<header><img src="../icons/icono48.png" alt=""><h1>Reportar un error</h1></header>
+<form id="f" novalidate>
+<section class="tarjeta-seccion">
+<label for="dominio"><span class="etq">Dominio</span></label>
+<input id="dominio" type="text" inputmode="url" autocomplete="off" spellcheck="false" aria-describedby="err-dom">
+<div id="err-dom" class="error-en-linea" role="alert"></div>
+<fieldset><legend class="etq">Tipo de error</legend>
+<label class="fila"><input type="radio" name="tipo" value="falso_positivo"><span>&nbsp;Es seguro, pero lo marcaron como riesgoso</span></label>
+<label class="fila"><input type="radio" name="tipo" value="falso_negativo"><span>&nbsp;Es fraudulento, pero no lo marcaron</span></label></fieldset>
+</section>
+<section class="tarjeta-seccion">
+<label class="fila"><input type="checkbox" id="recordar" checked><span>&nbsp;Recordarlo solo para mí (se guarda en este equipo)</span></label>
+<label class="fila"><input type="checkbox" id="compartir"><span>&nbsp;Compartir este reporte para mejorar el modelo</span></label>
+<p class="nota" id="nota-comp"></p>
+<details><summary>Qué se guardaría exactamente</summary><pre id="previa"></pre></details>
+</section>
+<div class="acciones"><button class="principal" type="submit" id="guardar">Guardar</button><button type="button" id="cancelar">Cancelar</button></div>
+<div id="msg"></div>
+</form></main><script type="module" src="reportar.js"></script></body></html>

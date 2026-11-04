@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Anzuelo Alerta",
+  "version": "0.1.0",
+  "description": "Analiza en tu equipo la dirección de cada sitio y te avisa si parece phishing. No envía las direcciones que visitas.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "alarms",
+    "webNavigation",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Anzuelo Alerta: estado del sitio",
+    "default_popup": "ui/popup.html",
+    "default_icon": {
+      "16": "icons/icono16.png",
+      "48": "icons/icono48.png"
+    }
+  },
+  "options_page": "ui/opciones.html",
+  "icons": {
+    "16": "icons/icono16.png",
+    "48": "icons/icono48.png",
+    "128": "icons/icono128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}

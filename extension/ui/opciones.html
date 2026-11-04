@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Opciones</title><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<header><img src="../icons/icono48.png" alt=""><h1 id="nombre">…</h1></header>
+<h2 style="margin-top:0">Opciones</h2>
+
+<section class="tarjeta-seccion"><h2>Protección</h2>
+<label class="fila"><input type="checkbox" role="switch" id="activa"><span>&nbsp;Protección activa</span></label>
+<p class="nota" id="est-prot"></p></section>
+
+<section class="tarjeta-seccion"><h2>Mis listas</h2>
+<h3>Sitios permitidos</h3>
+<div class="fila-agregar"><div><label class="sr" for="in-allow">Agregar sitio permitido</label><input id="in-allow" type="text" placeholder="ejemplo.com" autocomplete="off" spellcheck="false"><div class="error-en-linea" id="err-allow" role="alert"></div></div><button id="add-allow">Agregar</button></div>
+<ul class="lista-sitios" id="ul-allow"></ul>
+<h3>Sitios bloqueados</h3>
+<div class="fila-agregar"><div><label class="sr" for="in-block">Agregar sitio bloqueado</label><input id="in-block" type="text" placeholder="ejemplo.com" autocomplete="off" spellcheck="false"><div class="error-en-linea" id="err-block" role="alert"></div></div><button id="add-block">Agregar</button></div>
+<ul class="lista-sitios" id="ul-block"></ul></section>
+
+<section class="tarjeta-seccion"><h2>Compartir reportes (opcional)</h2>
+<label class="fila"><input type="checkbox" role="switch" id="optin"><span>&nbsp;Compartir reportes de errores para mejorar el modelo</span></label>
+<p class="nota">Cada reporte contiene solo dominio, tipo de error, fecha e identificador anónimo. <a href="politica.html" target="_blank" rel="noopener">Ver detalle</a></p>
+<p>Reportes pendientes: <strong id="cuenta">0</strong></p>
+<div class="acciones"><button id="exportar">Exportar reportes (JSON)</button><button id="borrar" class="peligro-btn">Borrar pendientes</button></div>
+<dl class="kv"><dt>Identificador anónimo</dt><dd id="id-info">—</dd></dl>
+<button id="renovar">Renovar identificador</button></section>
+
+<section class="tarjeta-seccion"><h2>Modelo y listas</h2>
+<dl class="kv">
+<dt>Versión del modelo</dt><dd id="m-ver">—</dd>
+<dt>Fecha</dt><dd id="m-fecha">—</dd>
+<dt>Huella SHA-256</dt><dd id="m-sha">—</dd>
+<dt>Verificación</dt><dd id="m-verif">—</dd>
+<dt>Umbrales (de 100)</dt><dd id="m-umb">—</dd>
+<dt>Listas del día</dt><dd id="m-listas">—</dd>
+</dl>
+<div class="acciones"><button class="principal" id="actualizar">Buscar actualización del modelo</button></div>
+<div id="msg-act" aria-live="polite"></div></section>
+
+<section class="tarjeta-seccion"><h2>Restablecer</h2>
+<p class="nota">Borra tus listas, reportes pendientes, identificador y consentimiento. Se conservan el modelo y las listas del día.</p>
+<button id="restablecer" class="peligro-btn">Restablecer ajustes</button><div id="msg-rest"></div></section>
+</main><script type="module" src="opciones.js"></script></body></html>

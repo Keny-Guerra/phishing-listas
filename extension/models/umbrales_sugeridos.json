@@ -1,0 +1,17 @@
+{
+  "umbral_advertencia": 0.3864,
+  "umbral_bloqueo": 0.9549,
+  "elegidos_con": "oof_5_pliegues_agrupados_por_host",
+  "test_en_advertencia": {
+    "recall": 0.774197624462977,
+    "fpr": 0.1714966754485008,
+    "precision": 0.8175873756408691
+  },
+  "test_en_bloqueo": {
+    "recall": 0.6507455142784938,
+    "fpr": 0.0208254924099862,
+    "precision": 0.9687734842300415
+  },
+  "auc_test": 0.882234863764264,
+  "criterio": "advertencia: mayor recall con FPR<=15 %; bloqueo: mayor recall con FPR<=1 % (predicciones out-of-fold; el test no interviene)"
+}

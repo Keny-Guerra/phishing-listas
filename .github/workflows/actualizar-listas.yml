@@ -1,0 +1,51 @@
+name: Actualizar listas del día
+# Publicador de la Capa 1: descarga OpenPhish + Tranco, genera listas compactas + manifest.json (SHA-256)
+# y las publica en la rama gh-pages (GitHub Pages). NO publica nada si la prueba previa o la verificación fallan.
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["extension/models/**", "src/listas_dia.py", ".github/workflows/actualizar-listas.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: listas
+  cancel-in-progress: false
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Descargar fuentes (uso no comercial; revisar licencias)
+        run: |
+          curl -fsSL --retry 3 --retry-delay 10 --max-time 120 -A "phishing-listas-pfc (proyecto academico)" https://openphish.com/feed.txt -o feed.txt
+          curl -fsSL --retry 3 --retry-delay 10 --max-time 300 https://tranco-list.eu/top-1m.csv.zip -o tranco.zip
+          unzip -p tranco.zip > tranco.csv
+          wc -l feed.txt tranco.csv
+      - name: Pruebas del publicador
+        run: python -m unittest discover -s tests
+      - name: Generar y verificar listas (falla = no se publica)
+        run: |
+          python src/listas_dia.py --phishing-file feed.txt --tranco-file tranco.csv --salida salida \
+            --version "$(date -u +%F)" \
+            --modelo-onnx extension/models/cnn_phishing.onnx --umbrales extension/models/umbrales_sugeridos.json \
+            --version-modelo "$(python -c "import json;print(json.load(open('extension/models/huella.json'))['version'])")"
+          ls -l salida
+      - name: Guardar copia del feed del día (privada, 90 días) para medir persistencia
+        uses: actions/upload-artifact@v4
+        with:
+          name: feed-${{ github.run_id }}
+          path: feed.txt
+          retention-days: 90
+      - name: Publicar en gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: salida
+          keep_files: false
+          enable_jekyll: false

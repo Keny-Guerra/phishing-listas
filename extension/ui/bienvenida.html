@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bienvenida</title><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<header><img src="../icons/icono48.png" alt=""><h1 id="nombre">…</h1></header>
+<p>Te avisa cuando un sitio parece phishing, analizando la dirección <strong>en tu equipo</strong>. Las direcciones que visitas no se envían a ningún servidor.</p>
+<section class="tarjeta-seccion" aria-labelledby="h-que">
+<h2 id="h-que">Qué hace y qué no hace</h2>
+<ul>
+<li>Analiza solo el nombre del sitio (por ejemplo, <em>banco-ejemplo.com</em>), nunca el contenido de las páginas ni tus contraseñas.</li>
+<li>Usa un modelo incluido en la extensión y listas de sitios fraudulentos que se descargan una vez al día.</li>
+<li>Puede equivocarse: nunca decide por ti en la zona de duda, solo te avisa.</li>
+</ul>
+<details><summary>¿Por qué Chrome menciona el historial al instalar?</summary>
+<p class="nota">Chrome muestra ese texto para cualquier extensión que pueda ver a qué sitio vas, porque necesita hacerlo para avisarte. Aquí esa información se analiza en tu equipo y no se guarda ni se envía.</p></details>
+</section>
+<section class="tarjeta-seccion" aria-labelledby="h-cons">
+<h2 id="h-cons">Tu consentimiento</h2>
+<label class="fila"><input type="checkbox" id="acepto"><span>&nbsp;Entiendo cómo funciona y quiero activar la protección.</span></label>
+<p class="nota">Compartir reportes de errores es opcional y está <strong>desactivado</strong>. Puedes activarlo después en Opciones. <a href="politica.html" target="_blank" rel="noopener">¿Qué incluye un reporte?</a></p>
+<div class="acciones"><button class="principal" id="activar" disabled>Activar protección</button></div>
+<div id="msg"></div>
+</section>
+<section class="tarjeta-seccion" id="fijar" hidden>
+<h2>Listo. Un último paso</h2>
+<p>Para ver el estado de cada sitio, fija el ícono: abre el menú de piezas de Chrome (rompecabezas) y pulsa el alfiler junto a <span id="nombre2"></span>.</p>
+</section>
+</main><script type="module" src="bienvenida.js"></script></body></html>

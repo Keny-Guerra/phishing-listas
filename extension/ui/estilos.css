@@ -1,0 +1,93 @@
+/* Estilos comunes. Paleta navy; los estados se distinguen por símbolo + texto + tinte (nunca solo por color). */
+:root{
+  --navy:#1f3864;--navy-osc:#14263f;--navy-claro:#d9e2f3;--texto:#1f2937;--suave:#4b5563;--borde:#cbd5e1;--fondo:#fff;
+  --seguro-f:#ecf8ef;--seguro-b:#15803d;--seguro-t:#14532d;
+  --prec-f:#fff6e5;--prec-b:#b45309;--prec-t:#6b3a07;
+  --peligro-f:#fdecec;--peligro-b:#b91c1c;--peligro-t:#7f1d1d;
+  --gris-f:#f1f2f4;--gris-b:#6b7280;--gris-t:#374151;
+  font-family:Arial,Helvetica,sans-serif;color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--texto);background:var(--fondo);font-size:14px;line-height:1.5}
+h1{font-size:18px;color:var(--navy);margin:0}
+h2{font-size:15px;color:var(--navy);margin:0 0 8px}
+p{margin:6px 0}
+a{color:#1d4ed8}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid #1d4ed8;outline-offset:2px}
+button{font:inherit;font-size:13px;min-height:36px;padding:7px 14px;border-radius:6px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
+button:hover:not(:disabled){background:var(--navy-claro)}
+button.principal{background:var(--navy);color:#fff}
+button.principal:hover:not(:disabled){background:var(--navy-osc)}
+button.peligro-btn{border-color:var(--peligro-b);color:var(--peligro-t)}
+button:disabled{opacity:.5;cursor:not-allowed}
+input[type=text]{font:inherit;min-height:36px;padding:6px 10px;border:1px solid var(--borde);border-radius:6px;width:100%}
+input[readonly]{background:var(--gris-f)}
+input[type=checkbox],input[type=radio]{width:18px;height:18px;margin:0 8px 0 0;vertical-align:-3px;accent-color:var(--navy)}
+label.fila{display:flex;align-items:flex-start;gap:0;margin:8px 0;cursor:pointer}
+.nota{font-size:12px;color:var(--suave)}
+.etq{font-size:12px;color:var(--suave);display:block}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.msg{margin:8px 0;padding:8px 12px;border-radius:6px;font-size:13px;border-left:4px solid var(--gris-b);background:var(--gris-f)}
+.msg.ok{border-color:var(--seguro-b);background:var(--seguro-f);color:var(--seguro-t)}
+.msg.error{border-color:var(--peligro-b);background:var(--peligro-f);color:var(--peligro-t)}
+.msg.info{border-color:var(--navy);background:#eef3fb;color:var(--navy-osc)}
+.error-en-linea{color:var(--peligro-t);font-size:12px;margin:4px 0}
+details{margin:10px 0;border:1px solid var(--borde);border-radius:6px;padding:8px 12px}
+summary{cursor:pointer;color:var(--navy);font-weight:bold}
+dl{margin:8px 0 0}dt{font-size:12px;color:var(--suave);margin-top:6px}dd{margin:0}
+code,pre{font-family:Consolas,monospace;font-size:12px}
+pre{background:var(--gris-f);padding:10px;border-radius:6px;overflow:auto;margin:6px 0;white-space:pre-wrap;word-break:break-all}
+
+/* ---------- popup (P02) ---------- */
+body.popup{width:360px}
+.popup .contenido{padding:14px 16px 12px}
+.popup .cab{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.popup .cab h1{font-size:15px}
+.dominio-actual{font-size:15px;word-break:break-all}
+.tarjeta{display:flex;align-items:center;gap:12px;padding:12px;border-radius:8px;border:2px solid var(--gris-b);background:var(--gris-f);color:var(--gris-t);margin:10px 0}
+.tarjeta .simbolo{font-size:26px;line-height:1;width:34px;text-align:center;flex:none}
+.tarjeta .texto{font-weight:bold}
+.tarjeta.seguro{border-color:var(--seguro-b);background:var(--seguro-f);color:var(--seguro-t)}
+.tarjeta.precaucion{border-color:var(--prec-b);background:var(--prec-f);color:var(--prec-t)}
+.tarjeta.peligro{border-color:var(--peligro-b);background:var(--peligro-f);color:var(--peligro-t)}
+.puntaje{margin:10px 0}
+.puntaje .num{font-size:20px;font-weight:bold;color:var(--navy)}
+.barra{position:relative;height:12px;border-radius:6px;background:linear-gradient(90deg,#dbeedd 0,#dbeedd var(--a,39%),#fbe3b5 var(--a,39%),#fbe3b5 var(--b,95%),#f5c0c0 var(--b,95%),#f5c0c0 100%);border:1px solid var(--borde);margin-top:6px}
+.barra .relleno{position:absolute;left:0;top:0;bottom:0;background:var(--navy);border-radius:6px 0 0 6px;opacity:.85}
+.barra .marca{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--texto)}
+.escala{position:relative;height:16px;font-size:11px;color:var(--suave)}
+.escala span{position:absolute;transform:translateX(-50%)}
+.pie{border-top:1px solid var(--borde);margin-top:12px;padding-top:8px;font-size:12px;color:var(--suave)}
+
+/* ---------- páginas (P01, P03, P04, P05, política) ---------- */
+.pagina{max-width:760px;margin:0 auto;padding:24px 20px 48px}
+.pagina header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.pagina header img{width:40px;height:40px}
+.tarjeta-seccion{border:1px solid var(--borde);border-radius:10px;padding:16px 18px;margin:14px 0;background:#fff}
+.lista-sitios{list-style:none;margin:8px 0;padding:0;max-height:200px;overflow:auto;border:1px solid var(--borde);border-radius:6px}
+.lista-sitios li{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:1px solid #eef0f3}
+.lista-sitios li:last-child{border-bottom:0}
+.lista-sitios .vacia{color:var(--suave);font-style:italic}
+.fila-agregar{display:flex;gap:8px;align-items:flex-start}
+.fila-agregar>div{flex:1}
+.kv{display:grid;grid-template-columns:200px 1fr;gap:4px 12px;font-size:13px}
+.kv dt{margin:0}
+.kv dd{word-break:break-all}
+
+/* ---------- advertencia (P03) ---------- */
+body.peligro-pagina{background:var(--peligro-f)}
+.peligro-pagina .pagina{max-width:680px}
+.cab-peligro{display:flex;align-items:center;gap:14px;border-left:8px solid var(--peligro-b);padding:6px 0 6px 14px;margin-bottom:12px}
+.cab-peligro .simbolo{font-size:44px;line-height:1;color:var(--peligro-b)}
+.cab-peligro h1{color:var(--peligro-t);font-size:22px}
+.dominio-grande{font-size:22px;font-weight:bold;word-break:break-all;display:block;margin:6px 0;color:#111}
+.peligro-pagina .tarjeta-seccion{background:#fff}
+
+/* ---------- diálogo de confirmación ---------- */
+dialog{border:1px solid var(--borde);border-radius:10px;padding:18px 20px;max-width:420px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+dialog::backdrop{background:rgba(15,23,42,.45)}
+dialog h2{margin-top:0}
+dialog .acciones{justify-content:flex-end;margin-bottom:0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:520px){.kv{grid-template-columns:1fr}}

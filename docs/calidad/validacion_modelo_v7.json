@@ -1,0 +1,42 @@
+{
+ "tamanos": {
+  "entrenamiento": 56000,
+  "validacion": 8000,
+  "prueba": 16000
+ },
+ "umbrales": {
+  "advertencia": 0.23,
+  "bloqueo": 0.94
+ },
+ "prueba_en_0.5": {
+  "n": 16000,
+  "recall": 0.7657,
+  "fpr": 0.1013,
+  "precision": 0.8831
+ },
+ "prueba_en_advertencia": {
+  "n": 16000,
+  "recall": 0.8698,
+  "fpr": 0.3403,
+  "precision": 0.7187
+ },
+ "prueba_en_bloqueo": {
+  "n": 16000,
+  "recall": 0.6825,
+  "fpr": 0.0214,
+  "precision": 0.9696
+ },
+ "hosts_vistos_en_entrenamiento": {
+  "n": 1235,
+  "recall": 0.9745,
+  "fpr": 0.2887,
+  "precision": 0.9754,
+  "pct_filas": 7.7
+ },
+ "hosts_nuevos": {
+  "n": 14765,
+  "recall": 0.8525,
+  "fpr": 0.3409,
+  "precision": 0.6845
+ }
+}

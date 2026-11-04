@@ -1,0 +1,25 @@
+{
+ "ext_id": "pnlemdijpeialdfjgichgnkhgaplgcmj",
+ "casos": [
+  {
+   "url": "https://www.google.com/",
+   "esperado": "permitir",
+   "obtenido": {
+    "accion": "permitir",
+    "motivo": "modelo_bajo_umbral"
+   },
+   "ms_primera": 643.0
+  },
+  {
+   "url": "https://secure-bcp-verificacion-cuenta.xyz/login",
+   "esperado": "bloquear_o_advertir",
+   "obtenido": {
+    "accion": "bloquear",
+    "motivo": "modelo_sobre_umbral_bloqueo"
+   },
+   "ms_primera": 11.2
+  }
+ ],
+ "p50_ms": 6.78,
+ "p95_ms": 12.63
+}
