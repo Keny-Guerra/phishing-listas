@@ -1,27 +1,27 @@
 {
   "schema": 1,
-  "generado": "2026-11-09",
+  "generado": "2026-11-10",
   "listas": {
     "bloqueo": {
-      "version": "2026-11-09",
+      "version": "2026-11-10",
       "archivo": "bloqueo.bin",
-      "bytes": 456,
-      "n": 114,
-      "sha256": "35de3f2ffe919e41bc6d076fb4cf9dc0cdd0d52cef65ec70aa07b48e057c8af1"
+      "bytes": 512,
+      "n": 128,
+      "sha256": "cc8fe0021302c65df62d83b83f064e5a4b9f22332245eefbe1f64592dfa3df25"
     },
     "bloqueo_urls": {
-      "version": "2026-11-09",
+      "version": "2026-11-10",
       "archivo": "bloqueo_urls.bin",
       "bytes": 536,
       "n": 134,
-      "sha256": "ddcefb8a4af00c5afd745d5ed3fd67cebb2314c71685e351f4ed58d37759ba53"
+      "sha256": "1a2b1e3f3a26e505d9356c9e594997a30056c6cd7cba0b425cb3d60168b630ef"
     },
     "permitidos": {
-      "version": "2026-11-09",
+      "version": "2026-11-10",
       "archivo": "permitidos.bin",
       "bytes": 400000,
       "n": 100000,
-      "sha256": "04ee58af3495256d3d0a637a05845c54f10b2c967146319837d3fe0b99395c5c"
+      "sha256": "30947aa6d180987acbce95ce9a43c610d5df37702093496b514bd5e250f2e309"
     }
   },
   "modelo": {
@@ -35,7 +35,7 @@
   "estadisticas": {
     "urls_feed": 300,
     "descartadas": 0,
-    "hosts_bloqueo": 114,
+    "hosts_bloqueo": 128,
     "urls_bloqueo": 134,
     "permitidos": 100000,
     "colisiones": 0
